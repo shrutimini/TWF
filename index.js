@@ -116,7 +116,7 @@ function findPaths(start, requiredItems) {
   return deliveries;
 }
 
-app.post('/calculate-delivery-cost', (req, res) => {
+app.post('cost-calculate', (req, res) => {
   const order = req.body;
   const allPaths = findPaths(null, order);
 
